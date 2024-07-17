@@ -2,8 +2,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Dancing.css';
 import monkey_no_background_img from '../Images/Space_Sloth_nbg.svg';
-import banana_img from '../Images/note.webp';
+import banana_img from '../Images/note_drawing.svg';
 import GoBananas from './GO_BANANAS';
+
 
 //Use debounce technique to handle double banana issue. Use it with new state const [isAddingBanana, setIsAddingBanana] = useState(false); 
 //use debounce right before the return
@@ -26,6 +27,8 @@ const useDebounce = (callback, delay) => {
 };
 
 const Dancing = () => {
+
+  
 
   //set states
   const [monkey, setMonkey] = useState({ x: 100, y: 20 });
@@ -236,8 +239,12 @@ const Dancing = () => {
   const addBananaWithDebounce = useDebounce(addBanana, 500);
 
   return (
+    <div className='includeAudio'>
+    
     <div className='page_body'>
+      
       <div className='dancing_monkey_container' ref={containerRef}>
+      
         <GoBananas
           onGoBananasClick={handleGoBananasClick}
           showClearButton={showClearButton}
@@ -270,9 +277,18 @@ const Dancing = () => {
               addBananaWithDebounce(monkey.x, monkey.y);
             }
           }}
+        
         />
+        
+        
       </div>
+      
+      
     </div>
+
+
+    </div>
+    
   );
 };
 

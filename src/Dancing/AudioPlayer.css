@@ -1,0 +1,19 @@
+.audio-player-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100000; /* Increase z-index to ensure it's above other elements */
+  }
+  
+  .audio-player {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+  }
+  
+  
+  

@@ -1,6 +1,12 @@
 /* .page_body {
   background-color: yellow;
 } */
+.includeAudio {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: brown; */
+
+}
 .dancing_monkey_container {
   /* background-color: blue; */
   position: fixed;
@@ -30,8 +36,8 @@
   filter: brightness(30%) saturate(300%) hue-rotate(180deg);
 }
 .banana_img {
-  height: 6%;
-  width: 4%;
+  height: 8%;
+  width: 12%;
   position: absolute;
   z-index: 1;
   pointer-events: none;

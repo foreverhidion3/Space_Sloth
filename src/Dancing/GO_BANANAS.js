@@ -1,5 +1,5 @@
 import React from 'react';
-import banana_img_3 from '../Images/notes.png';
+import banana_img_3 from '../Images/notes_nbg.svg';
 import './GO_BANANAS.css'
 
 const GoBananas = ({ showClearButton, onGoBananasClick, onClearBananasClick }) => {
